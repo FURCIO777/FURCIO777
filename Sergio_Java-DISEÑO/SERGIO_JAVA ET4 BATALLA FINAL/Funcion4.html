@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Funciones Matemáticas JavaScript</h2>
+    <script>
+        //Función de Valor absoluto de un número
+        document.write("<h2> Uso de la función de un valor absoluto </h2>");
+        let a = Math.abs(7.25);
+        let b = Math.abs(-7.25);
+        let c = Math.abs(null);
+        let d = Math.abs("Hello");
+        let e = Math.abs(2-3);
+        document.write(a + "<br>" + b + "<br>" + c + "<br>" + d + "<br>" + e + "<br>");
+        //función que devuelve el valor máximo de una lista de números
+        document.write("<h2> Uso de la función de Valor Máximo de una lista </h2>");
+        let x = Math.max(5,10);
+        document.write("El máximo es: " + x + "<br>");
+ 
+        let y = Math.max(0, 150, 30, 20, 38);
+        document.write("El máximo es: " + y + "<br>");
+ 
+        let z = Math.max(-5, 4);
+        document.write("El máximo es: " + z + "<br>");
+ 
+        //función que devuelve un número al azar en el rango de 0 a 99 en este caso
+        document.write("<h2> Uso de la función que devuelve un valor al azar en un rango de 0 a 99 </h2>");
+        let numero = parseInt(Math.random()*100);
+        document.write("El número al azar es: " + numero + "<br><br>");
+ 
+        //función que eleva un número base a la potencia indicada por el exponente
+        document.write("<h2> Uso de la función genera una Potencia </h2>");
+        let potencia= Math.pow(2, 3);
+        document.write("El número elevado a la potencia indicada es: " + potencia);
+    </script>
+</body>
+</html>

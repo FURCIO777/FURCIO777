@@ -1,0 +1,42 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="estilointe.css">
+</head>
+<marquee bg color="804000">Valtimore:Venta de celulares smartphone</marquee>
+<body>
+    <center><h1></h1>
+    <h2>Selecciona una y te muestro una foto</h2>
+    <button value="Huawei" onclick="modelocelular('Huawei')">Huawei</button>
+    <button value="Iphone" onclick="modelocelular('Iphone')"> Iphone </button>
+    <button value="PeraPhone" onclick="modelocelular('PeraPhone')">PeraPhone</button>
+    <button value="Samsung" onclick="modelocelular('Samsung')">Samsung</button>
+    <button value="OPPO" onclick="modelocelular('OPPO')">OPPO</button></center>
+    <p id="precio" style="color:black; font-size:  x-large;"></p>
+    
+    <script language="javascript">
+function modelocelular (op) {
+    switch (op) {
+        case 'Huawei':
+        document.body.style.background= "#f3f3f3 URL('huawei.jpg') no-repeat center center ";
+        document.getElementById('precio').innerHTML="<spam style='color: black.'> $5,500";
+        break;
+        case 'Iphone':
+        document.body.style.background= "#f3f3f3 URL('iphone.jpg') no-repeat center center";
+        document.getElementById('precio').innerHTML="<spam style='color: black.'> $10,500";
+        break;
+        case 'PeraPhone':
+        document.body.style.background= "#f3f3f3 URL('peraphone.jpg') no-repeat center center";
+        document.getElementById('precio').innerHTML="<spam style='color: black.'> $1,500";
+        break;
+        case 'Samsung':
+        document.body.style.background= "#f3f3f3 URL('samsung.jpg') no-repeat center center";
+        document.getElementById('precio').innerHTML="<spam style='color: black.'> $7,500";
+        break;
+        case 'OPPO':
+        document.body.style.background= "#f3f3f3 URL('oppo.jpg') no-repeat center center";
+        document.getElementById('precio').innerHTML="<spam style='color: black.'> $1,500";
+    }
+ }
+    </script>
+</body>
+</html>

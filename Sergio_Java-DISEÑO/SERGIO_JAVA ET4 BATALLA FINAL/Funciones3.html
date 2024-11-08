@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <font face="Arial">
+            <h2>Funciones de Arrays Java Script</h2>
+            <script type="text/javascript">
+                fruits = ["Banana", "Naranja", "Manzana", "Mango"];
+
+                document.write("Arreglo original <br>");
+                document.write(fruits, "<br><br>");
+
+                //uso de la funcion pop()
+                document.write("Arreglo sin el ultimo elemento <br>");
+                fruits.pop();
+                document.write(fruits, "<br><br>");
+
+                //uso de la funcion push()
+                document.write("Arreglo con 2 elementos nuevos al final <br>");
+                fruits.push("kiwi", "sandia");
+                document.write(fruits,"<br><br>");
+
+                //uso de la funcion join()
+                document.write("Arreglo que agrega un separador entre cada elemento<br>");
+                let texto = fruits.join("y tambien");
+                document.write(texto,"<br>");
+            </script>
+        </font>
+    </body>
+</html>

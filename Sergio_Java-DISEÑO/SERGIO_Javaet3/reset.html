@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel="stylesheet" type= "text/css" href="estilo.css">
+    </head>
+    <body>
+        <p>Asignar un evento "onreset" a un elemento de formulario</p>
+        <p>Cuando reinicia el formulario, se activa una funcion que genera un texto</p>
+
+        <from onreset="mifuncion()">
+        ingresa su nombre:<input type="text">
+        <input type="reset">
+    </from>
+    <p id="demo"></p>
+    <script lenguage="javascript">
+        function miFuncion(){
+            document.getElementById("demo").innerHTML="el formulario fue reiniciado";
+        }
+    </script>
+    </body>
+</html>

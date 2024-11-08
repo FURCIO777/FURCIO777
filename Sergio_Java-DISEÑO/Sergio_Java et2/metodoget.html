@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Ejemplo getElementById</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+    </head>
+    <body>
+        <h1><p id="Texto">Tecnico Programador Web</p></h1>
+        <button onclick="cambiacolor('Blue')">Azul</button>
+        <button onclick="cambiacolor('red')">Rojo</button>
+        <script type="text/javascript">
+            function cambiacolor(nuevocolor){
+                var  elem=document.getElementById('Texto');
+                <!--Se establece nuevo color de texto-->
+                elem.style.color=nuevocolor;
+            }
+        </script>
+    </body>
+</html>

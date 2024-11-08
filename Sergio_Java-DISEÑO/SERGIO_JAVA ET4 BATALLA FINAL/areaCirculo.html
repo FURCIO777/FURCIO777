@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <font face="Arial">
+            <h2>Funciones que devuelven resultados</h2>
+
+            <script type="text/JavaScript">
+
+                function calcularAreaCirculo(radio) {
+                    var area= Math.Pi * radio * radio;//calcula el area del circulo
+                    var area2=area.toFixed(2);//lo ajusta a 2 decimales
+                    return area2;
+                }
+                radio=prompt("Dame el valor del radio del circulo","Escribe un numero entero");
+                var areaCirculo=calcularAreaCirculo(radio);
+                document.write("El area del circulo es: " + areaCirculo);
+            </script>
+        </font>
+    </body>
+</html>
